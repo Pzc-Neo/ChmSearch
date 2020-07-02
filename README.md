@@ -15,25 +15,20 @@ PS：这个网页我是一边学一边做的，所以可能有很多地方做得
 ## 1.提供了一个默认导航页面
 
 大家可以自己修改成自己常用的网站。(文件是`defaultPage.html`)
-
 ![](ScreenShot/CHmSearch-01.png)
 
 ## 2.添加预设的词
-
 ![](ScreenShot/CHmSearch-02-1.png)
 
 ## 2.快速切换搜索引擎
 
 直接点击左侧的搜索引擎就能切换了。当然也可以直接**按快捷键**(后面有快捷键的说明)。
-
 ![](ScreenShot/CHmSearch-02.png)
 
 ## 3.同时用两个搜索引擎
-
 ![](ScreenShot/CHmSearch-03.png)
 
 ## 4.同时用三个搜索引擎
-
 ![](ScreenShot/CHmSearch-04.png)
 
 # 快捷键说明
