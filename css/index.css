@@ -1,0 +1,142 @@
+body {
+    background-color: #fff;
+    /* background-color: #222222; */
+    padding-top: 49px;
+    overflow: hidden;
+
+    /* background-color: rgb(220, 224, 223); */
+}
+
+.dropdown-menu-parent{
+    width: 50px;
+    background-color: antiquewhite;
+}
+/* 左侧面板的背景颜色 */
+#leftPanel{
+    background-color: #222222;
+}
+.scrollStyle{
+    /* 改变了这个高度，可能会导致右侧面板的横向滚动条不显示 */
+    height: 95vh;
+    overflow: hidden;
+}
+.scrollStyle::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 2px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    /* background: #535353; */
+    background-color: #222222;
+}
+
+.scrollStyle::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+
+.nav-header {
+    color: rgb(12, 190, 131);
+    /* background-color: #222222; */
+    background-color: #535353;
+
+}
+
+.nav-header:hover {
+    background-color: rgb(12, 190, 131)
+}
+
+.nav-header:active {
+    background-color: rgb(12, 190, 131);
+}
+
+/* 分组快捷键样式 */
+.shortCutKey_green_style {
+    font-size: 8px;
+    color: rgb(56, 134, 107);
+}
+
+.shortCutKey_style {
+    font-size: 10px;
+    color: rgb(92, 92, 92)
+}
+
+.shortCutKey_style:hover {
+    color: rgb(56, 134, 107);
+}
+
+.engine_btn_style {
+    color: rgb(150, 150, 150);
+}
+
+.engine_btn_style:hover {
+    background-color: rgb(12, 190, 131);
+    color: rgb(12, 190, 131);
+}
+
+.engine_btn_style:active {
+    background-color: rgb(12, 190, 131);
+    color: rgb(12, 190, 131);
+}
+
+/* 按钮样式 */
+.btn-default {
+    color: rgb(255, 254, 254);
+    background-color: rgb(26, 179, 125);
+    /* background-color: rgb(12,190,131); */
+    border: 1px solid rgb(15, 128, 90);
+}
+
+.btn-default:hover {
+    color: rgb(20, 163, 113);
+}
+
+/* 选择引擎的按钮的样式 */
+.btn-selectEngine {
+    background-color: rgb(241, 241, 241);
+    color: rgb(20, 163, 113);
+}
+
+/* 按钮的快捷键文字样式 */
+.addword_btn_style {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+}
+
+
+.selectEngine_style{
+    min-width: 20px;
+}
+
+/* 文本溢出时显示为“...”-s */
+.top_div {
+    /* 鼠标指针变手型 */
+    cursor:pointer;
+    width: 580px;
+}
+
+/* 网站描述 */
+.disc_text {
+    position: absolute;
+    top:13.5px;
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 1;
+    /* 垂直排列 */
+    -webkit-box-orient: vertical;
+    /* 内容自动换行 */
+    word-break: break-all;
+}
+/* 文本溢出时显示为“...”-e */
