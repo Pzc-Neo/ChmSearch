@@ -1,6 +1,13 @@
 //用于“展开/折叠左侧面板”，判断左侧面板是否折叠
 var isFold = 1;
 
+// 按快捷键的时候隐藏提示框
+function hide_panel() {
+    $("#auto").removeClass();
+    $("#auto").addClass("auto_hidden")
+
+}
+
 //按键执行的操作
 document.onkeydown = function (event) {
 
@@ -32,36 +39,42 @@ document.onkeydown = function (event) {
     //用百度搜索 ctrl+alt+y
     if (e && e.keyCode == 89 && e.ctrlKey === true && e.altKey === true) {
         $("#baidu")[0].click();
+        hide_panel()
     }
 
     //用谷歌搜索 ctrl+alt+u
     if (e && e.keyCode == 85 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "google";
         $("#google")[0].click();
+        hide_panel()
     }
 
     //用必应搜索 ctrl+alt+i
     if (e && e.keyCode == 73 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "bing";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //用密迹搜索 ctrl+alt+o
     if (e && e.keyCode == 79 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "mijisou";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //用神马搜索 ctrl+alt+p
     if (e && e.keyCode == 80 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "shenma";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //用magi搜索 ctrl+alt+[
     if (e && e.keyCode == 219 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "magi";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //常用网站
@@ -69,24 +82,28 @@ document.onkeydown = function (event) {
     if (e && e.keyCode == 72 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "bilibili";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //知乎搜索 ctrl+alt+j
     if (e && e.keyCode == 74 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "sogouzhihu";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //搜狗微信 ctrl+alt+k
     if (e && e.keyCode == 75 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "sogouweixin";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //微博搜索 ctrl+alt+l
     if (e && e.keyCode == 76 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "weibo";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //资源搜索
@@ -94,6 +111,8 @@ document.onkeydown = function (event) {
     if (e && e.keyCode == 71 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "sowangpan";
         $("#" + engine_id)[0].click();
+        hide_panel()
+
     }
 
 
@@ -101,18 +120,21 @@ document.onkeydown = function (event) {
     if (e && e.keyCode == 66 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "soyinyue";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //书籍搜索 ctrl+alt+n
     if (e && e.keyCode == 78 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "soshuji";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
     //电影搜索 ctrl+alt+m
     if (e && e.keyCode == 77 && e.ctrlKey === true && e.altKey === true) {
         engine_id = "sodianying";
         $("#" + engine_id)[0].click();
+        hide_panel()
     }
 
 
@@ -160,22 +182,19 @@ document.onkeydown = function (event) {
 
     //单搜 ctrl+alt+6
     if (e && e.keyCode == 54 && e.ctrlKey === true && e.altKey === true) {
-        $('#auto').removeClass();
-        $('#auto').addClass("auto_hidden");
+        hide_panel()
         $("#one_engine").click();
     }
 
     //双搜 ctrl+alt+7
     if (e && e.keyCode == 55 && e.ctrlKey === true && e.altKey === true) {
-        $('#auto').removeClass();
-        $('#auto').addClass("auto_hidden");
+        hide_panel()
         $("#two_engine").click();
     }
 
     //三搜 ctrl+alt+8
     if (e && e.keyCode == 56 && e.ctrlKey === true && e.altKey === true) {
-        $('#auto').removeClass();
-        $('#auto').addClass("auto_hidden");
+        hide_panel()
         $("#three_engine").click();
     }
 
@@ -201,4 +220,6 @@ document.onkeydown = function (event) {
         }
 
     }
+
+
 }
