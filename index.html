@@ -220,22 +220,25 @@
 
                             </div>
 
-                            <ul class="nav navbar-nav" id="motto">
-                                <li>
-                                    <iframe style="position:relative;top:5px" allowtransparency="true" frameborder="0"
-                                        width="180" height="36" scrolling="no"
-                                        src="https://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=3&bd=0&k=&f=808080&ltf=808080&htf=808080&q=1&e=1&a=1&c=72046&w=180&h=36&align=left"></iframe>
-                                </li>
-                                <li>
-                                    <div class="top_div" id="top_div">
-                                        <div class="disc_text">
-                                            <div id="saying" title="伸手摘星，即使徒劳无功，也不至于一手淤泥。" onclick="setSaying()">
-                                                伸手摘星，即使徒劳无功，也不至于一手淤泥。
+                            <!-- 导航最高为50px，超过的不显示 -->
+                            <div style="max-height:50px;overflow:hidden">
+                                <ul class="nav navbar-nav" id="motto">
+                                    <li>
+                                        <iframe style="position:relative;top:5px" allowtransparency="true"
+                                            frameborder="0" width="180" height="36" scrolling="no"
+                                            src="https://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=3&bd=0&k=&f=808080&ltf=808080&htf=808080&q=1&e=1&a=1&c=72046&w=180&h=36&align=left"></iframe>
+                                    </li>
+                                    <li>
+                                        <div class="top_div" id="top_div">
+                                            <div class="disc_text">
+                                                <div id="saying" title="伸手摘星，即使徒劳无功，也不至于一手淤泥。" onclick="setSaying()">
+                                                    伸手摘星，即使徒劳无功，也不至于一手淤泥。
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -391,7 +394,8 @@
                             <!-- 书籍搜索 -->
                             <li>
                                 <a href="link" id="soshuji" onclick="leftPanel_searchWord(this.id)"
-                                    class="engine_btn_style" rel="https://www.jiumodiary.com/" target="main_Frame" title="这个网站需要自己手动复制关键词来搜索">书籍搜索
+                                    class="engine_btn_style" rel="https://www.jiumodiary.com/" target="main_Frame"
+                                    title="这个网站需要自己手动复制关键词来搜索">书籍搜索
                                     <span class="shortCutKey_style">CA+n</span>
                                 </a>
                             </li>

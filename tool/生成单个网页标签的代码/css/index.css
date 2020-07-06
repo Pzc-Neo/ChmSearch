@@ -1,0 +1,103 @@
+#app{
+    width: 900px;
+}
+
+
+.single_website_panel {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* position: absolute; */
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #c0e2d7;
+    width: 100%;
+    height: 60px;
+    /* padding: 1px; */
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgb(197, 224, 216);
+    top: 0px;
+    /* left: 2px; */
+}
+
+.single_website_panel:hover {
+    box-shadow: 0px 5px 15px #bfdacc;
+    top: -6px;
+    transition: all 0.5s ease-out;
+}
+
+/* 网站描述 */
+.disc_text {
+    padding-top: 2px;
+    font-size: 11px;
+    color: rgb(138, 138, 138);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 1;
+    /* 垂直排列 */
+    -webkit-box-orient: vertical;
+    /* 内容自动换行 */
+    word-break: break-all;
+
+}
+
+
+/* 网站名称 */
+.website_name {
+    font-size: 13px;
+    /* font-weight: bold; */
+    color: rgb(12, 190, 131);
+    /* color: rgb(61, 61, 61); */
+}
+
+.tab_single_content {
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tab_img_content {
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    padding: 5px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ico_style {
+    position: relative;
+    top: 5px;
+}
+
+.col_style {
+    /* 每个网站标签之间的间隔 */
+    padding: 3px;
+    left: 10px;
+}
+
+
+/* 分组标签 */
+.group_title {
+    padding-bottom: 7px;
+    /* padding:12px; */
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    color: #1b553a;
+    font-size: 16px;
+}
+
+.label_input {
+    position: relative;
+    top: 9px;
+    text-align: center;
+    color: rgb(105, 105, 105);
+}
+
+.el-row {
+    margin-bottom: 8px;
+}

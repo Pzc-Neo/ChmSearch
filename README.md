@@ -18,6 +18,7 @@ PS：这个网页我是一边学一边做的，所以可能有很多地方做得
 ![](ScreenShot/CHmSearch-01.png)
 
 ## 2.添加预设的词
+
 ![](ScreenShot/CHmSearch-02-1.png)
 
 ## 3.快速切换搜索引擎
@@ -26,9 +27,11 @@ PS：这个网页我是一边学一边做的，所以可能有很多地方做得
 ![](ScreenShot/CHmSearch-02.png)
 
 ## 4.同时用两个搜索引擎
+
 ![](ScreenShot/CHmSearch-03.png)
 
 ## 5.同时用三个搜索引擎
+
 ![](ScreenShot/CHmSearch-04.png)
 
 # 快捷键说明

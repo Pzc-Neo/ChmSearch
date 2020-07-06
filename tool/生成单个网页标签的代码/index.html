@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成单个标签的代码</title>
+    <!-- 引入样式 -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+    <link rel="styleSheet" href="./css/element-ui.css">
+    <link rel="styleSheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div @keyup="change()">
+            <el-row>
+                <el-col :span="3">
+                    <div class="label_input">
+                        <span>网站名称：</span>
+                    </div>
+                </el-col>
+                <el-col :span="12">
+                    <div>
+                        <el-input v-model="web_name" placeholder="请输入内容"></el-input>
+                    </div>
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col :span="3">
+                    <div class="label_input">
+                        <span>网站地址：</span>
+                    </div>
+                </el-col>
+                <el-col :span="12">
+                    <div>
+                        <el-input v-model="web_link" placeholder="请输入内容"></el-input>
+                    </div>
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col :span="3">
+                    <div class="label_input">
+                        <span>网站描述：</span>
+                    </div>
+                </el-col>
+                <el-col :span="12">
+                    <div>
+                        <el-input v-model="web_discript" placeholder="请输入内容"></el-input>
+                    </div>
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col :span="3">
+                    <div class="label_input">
+                        <span>标签效果：</span>
+                    </div>
+                </el-col>
+
+                <el-col :span="12">
+                    <div id="show_html" v-html="content">
+                    </div>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-col :span="3">
+                    <el-row>
+                        <div class="label_input">
+                            <span>标签代码：</span>
+                            <br>
+                            <br>
+                            <el-button onclick="copyCode()">复制代码</el-button>
+                        </div>
+                    </el-row>
+                </el-col>
+                <el-col :span="12">
+                    <textarea id="code_show" rows="23" cols="90">
+<!-- 单个网站标签-开头 -->
+<div class=" col-xs-12 col-sm-3 col-md-2 col-lg-2 col_style">
+    <!-- single_website_panel 控制整个标签的颜色、高度等 -->
+    <div class="single_website_panel"
+        onclick="window.open('{{web_link}}' ,'_blank')" data-toggle="tooltip"
+        data-placement="bottom" title="{{web_discript}}">
+        <div class="container-fluid">
+            <div class="row single_website_text">
+                <!-- 文案 -->
+                <div
+                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 disc_text tab_single_content">
+                    <div class="website_name">
+                        <strong>{{ web_name }}</strong>
+                    </div>
+
+                    <div class="disc_text">
+                        <span>
+                            {{ web_discript }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 单个网站标签-结尾 -->
+                    </textarea>
+                </el-col>
+            </el-row>
+
+        </div>
+
+    </div>
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="./js/vue.js"></script>
+    <!-- 引入组件库 -->
+    <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+    <script src="./js/element-ui.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
